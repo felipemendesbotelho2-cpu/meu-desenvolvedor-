@@ -30,20 +30,13 @@ nav.primary-nav a{text-decoration:none;color:var(--sub);}
 @media (max-width:800px){ nav.primary-nav{display:none;} }
 
 .hero{padding:80px 0 68px;border-bottom:1px solid var(--line);}
-.hero-grid{display:grid;grid-template-columns:1.3fr 0.9fr;gap:52px;align-items:start;}
 .kicker{font-size:0.85rem;color:var(--accent);margin:0 0 16px;font-weight:500;}
 h1{font-family:var(--font-head);font-weight:700;font-size:clamp(2.2rem,4.2vw,3.2rem);line-height:1.12;margin:0 0 20px;max-width:17ch;}
 .hero-lede{font-size:1.05rem;color:var(--sub);max-width:48ch;margin:0 0 32px;}
 .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
 .btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#0F1417;text-decoration:none;padding:14px 26px;font-size:0.95rem;font-weight:500;border-radius:var(--radius);}
 .btn-secondary{display:inline-flex;align-items:center;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--ink);padding:14px 2px;font-size:0.95rem;}
-.case-file{border:1px solid var(--line);background:var(--panel);padding:28px 26px;border-radius:var(--radius);}
-.case-file .cf-label{font-size:0.78rem;color:var(--sub);margin-bottom:20px;border-bottom:1px solid var(--line);padding-bottom:14px;}
-.cf-stat{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line);gap:14px;}
-.cf-stat:last-child{border-bottom:none;}
-.cf-stat .num{font-family:var(--font-head);font-size:1.4rem;color:var(--accent);}
-.cf-stat .lbl{font-size:0.85rem;color:var(--sub);text-align:right;max-width:18ch;}
-@media (max-width:860px){ .hero-grid{grid-template-columns:1fr;} h1{max-width:none;} }
+@media (max-width:860px){ h1{max-width:none;} }
 
 section{padding:74px 0;border-bottom:1px solid var(--line);}
 section:last-of-type{border-bottom:none;}
@@ -104,7 +97,7 @@ footer{padding:32px 0 calc(32px + env(safe-area-inset-bottom,0px));font-size:0.8
 </header>
 
 <section class="hero">
-  <div class="wrap hero-grid">
+  <div class="wrap">
     <div>
       <p class="kicker">Desenvolvimento sob medida — Palmas-TO e região</p>
       <h1>Sistema digital pra quem já cansou de perder venda no meio da conversa</h1>
@@ -113,12 +106,6 @@ footer{padding:32px 0 calc(32px + env(safe-area-inset-bottom,0px));font-size:0.8
         <a class="btn-primary" href="#contato">Pedir orçamento no WhatsApp</a>
         <a class="btn-secondary" href="#portfolio">Ver portfólio real</a>
       </div>
-    </div>
-    <div class="case-file">
-      <div class="cf-label">Resumo do serviço</div>
-      <div class="cf-stat"><span class="num">2</span><span class="lbl">frentes: sites institucionais/lojas e planilhas de gestão</span></div>
-      <div class="cf-stat"><span class="num">6+</span><span class="lbl">projetos reais entregues, veja no portfólio abaixo</span></div>
-      <div class="cf-stat"><span class="num">WhatsApp</span><span class="lbl">contato e vendas integrados desde o dia 1</span></div>
     </div>
   </div>
 </section>
